@@ -1,0 +1,30 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.navbar {
+ background-color: #630038;   
+}
+.navbar-nav > li > a {
+    color: #E6E6E6 !important;
+}
+.navbar-nav > li > a:hover {
+    color: #939393 !important;
+}
+.navbar-brand {
+    color: #E6E6E6 !important;
+}
+.navbar-brand:hover {
+    color: #939393 !important;
+}
+
+
+body {
+    background: #83F42D; /* fallback for old browsers */
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#CAFA2E), to(#83F42D));
+    background: -webkit-linear-gradient(to left, #CAFA2E, #83F42D);
+    background: -moz-linear-gradient(to left, #CAFA2E, #83F42D);
+    background: -o-linear-gradient(to left, #CAFA2E, #83F42D);
+    background: linear-gradient(to left, #CAFA2E, #83F42D); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
