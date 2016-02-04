@@ -26,7 +26,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Виды спорта", "#" %></li>
         <li><%= link_to "О нас", about_path %></li>
-        <li><%= link_to "Обратная связь", "#" %></li>
+        <li><%= link_to "Обратная связь", new_contact_path %></li>
         <li><%= link_to "Мой город", "#" %></li>
         <li><%= link_to "Мой профиль", "#" %></li>
         <li><%= link_to "Выйти", "#" %></li>
@@ -36,6 +36,9 @@
 </nav>
 
 <div class="container">
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "alert alert-#{key}" %>
+  <% end %>
 <%= yield %>
 </div>
 
